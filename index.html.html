@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NFC — Tap. Share. Connect.</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;color:#111;background:#f7f7f8}
+a{text-decoration:none;color:inherit}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between;max-width:1180px;margin:auto;padding:0 24px}
+.logo{font-size:22px;font-weight:800;letter-spacing:-.7px}
+.navlinks{display:flex;gap:30px;color:#666;font-size:14px}
+.navbtn{background:#111;color:#fff;padding:11px 18px;border-radius:24px;font-size:14px}
+.hero{max-width:1180px;margin:auto;padding:90px 24px 100px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.eyebrow{color:#777;font-size:14px;margin-bottom:18px}
+h1{font-size:clamp(48px,6vw,78px);line-height:.98;letter-spacing:-4px;margin-bottom:25px}
+.grad{background:linear-gradient(90deg,#111,#777);-webkit-background-clip:text;color:transparent}
+.lead{font-size:20px;line-height:1.5;color:#666;max-width:520px;margin-bottom:32px}
+.actions{display:flex;gap:12px;align-items:center}
+.primary{background:#111;color:#fff;padding:15px 24px;border-radius:28px;font-weight:600}
+.secondary{padding:15px 20px;color:#555}
+.product-stage{height:520px;border-radius:34px;background:radial-gradient(circle at 50% 40%,#fff 0,#e8e8ea 48%,#d8d8db 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.card{width:290px;height:184px;border-radius:22px;background:linear-gradient(135deg,#151515,#555);box-shadow:0 35px 60px #0004;transform:rotate(-8deg);display:flex;flex-direction:column;justify-content:space-between;padding:25px;color:#fff}
+.nfc{font-size:34px;font-weight:700}
+.card small{opacity:.65}
+.tag{position:absolute;bottom:25px;left:25px;background:#fff9;padding:9px 14px;border-radius:20px;font-size:12px;backdrop-filter:blur(10px)}
+.section{max-width:1180px;margin:auto;padding:90px 24px}
+.center{text-align:center}
+h2{font-size:48px;letter-spacing:-2px;margin-bottom:15px}
+.sub{color:#777;font-size:18px;margin-bottom:45px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.box{background:#fff;border:1px solid #e9e9eb;border-radius:25px;padding:32px;min-height:210px}
+.icon{font-size:28px;margin-bottom:24px}
+.box h3{font-size:20px;margin-bottom:10px}
+.box p{color:#777;line-height:1.5}
+.products{grid-template-columns:repeat(3,1fr)}
+.price{font-size:30px;font-weight:700;margin:18px 0}
+.productcard{background:#fff;border-radius:28px;padding:18px;border:1px solid #e7e7e9}
+.mini{height:220px;border-radius:20px;background:#eee;display:flex;align-items:center;justify-content:center}
+.mini-card{width:190px;height:120px;border-radius:15px;background:#222;transform:rotate(-7deg);box-shadow:0 20px 35px #0003}
+.productcard h3{margin-top:22px;font-size:20px}
+.productcard p{color:#777;margin-top:7px}
+.buy{display:block;text-align:center;background:#111;color:#fff;padding:13px;border-radius:20px;margin-top:18px}
+.how{background:#111;color:#fff;border-radius:35px;padding:70px 55px}
+.how .sub{color:#aaa}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.step span{font-size:13px;color:#888}
+.step h3{margin:14px 0 8px;font-size:22px}
+.step p{color:#aaa;line-height:1.5}
+.cta{padding:110px 24px;text-align:center}
+.cta p{color:#777;font-size:18px;margin:15px auto 28px}
+footer{border-top:1px solid #ddd;padding:30px 24px;color:#888;text-align:center;font-size:13px}
+@media(max-width:760px){
+.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:55px}.product-stage{height:390px}
+.grid,.products,.steps{grid-template-columns:1fr}h2{font-size:38px}.how{padding:45px 28px}h1{letter-spacing:-2.5px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">NFC.</div>
+  <div class="navlinks"><a href="#products">Товары</a><a href="#how">Как работает</a><a href="#contacts">Контакты</a></div>
+  <a class="navbtn" href="#products">Заказать</a>
+</nav>
+
+<section class="hero">
+  <div>
+    <div class="eyebrow">SMART NFC • ALMATY</div>
+    <h1>Один тап.<br><span class="grad">Всё о вас.</span></h1>
+    <p class="lead">Премиальные NFC-карты, которые мгновенно открывают ваши контакты, соцсети, меню, портфолио или сайт.</p>
+    <div class="actions"><a class="primary" href="#products">Выбрать карту</a><a class="secondary" href="#how">Как это работает →</a></div>
+  </div>
+  <div class="product-stage">
+    <div class="card"><div class="nfc">NFC</div><small>YOUR BRAND • ALMATY</small></div>
+    <div class="tag">Просто поднеси смартфон</div>
+  </div>
+</section>
+
+<section class="section center">
+  <h2>Минимализм.<br>Максимум возможностей.</h2>
+  <p class="sub">Одна карта заменяет целую стопку визиток.</p>
+  <div class="grid">
+    <div class="box"><div class="icon">⌁</div><h3>Мгновенно</h3><p>Клиент прикладывает телефон — ваша страница открывается без приложения.</p></div>
+    <div class="box"><div class="icon">◉</div><h3>Ваш дизайн</h3><p>Логотип, имя, цвета и оформление под ваш бренд или личный стиль.</p></div>
+    <div class="box"><div class="icon">↗</div><h3>Всё в одном</h3><p>Instagram, WhatsApp, TikTok, контакты, меню, портфолио и любые ссылки.</p></div>
+  </div>
+</section>
+
+<section class="section" id="products">
+  <div class="center"><h2>Выберите свой NFC</h2><p class="sub">Начните с простого — персонализацию сделаем под вас.</p></div>
+  <div class="grid products">
+    <div class="productcard"><div class="mini"><div class="mini-card"></div></div><h3>NFC Black</h3><p>Матовая чёрная карта</p><div class="price">3 990 ₸</div><a class="buy" href="#contacts">Заказать</a></div>
+    <div class="productcard"><div class="mini"><div class="mini-card" style="background:linear-gradient(135deg,#eee,#bbb)"></div></div><h3>NFC Premium</h3><p>Премиальный дизайн</p><div class="price">4 990 ₸</div><a class="buy" href="#contacts">Заказать</a></div>
+    <div class="productcard"><div class="mini"><div class="mini-card" style="background:linear-gradient(135deg,#111,#222)"></div></div><h3>NFC Custom</h3><p>Полностью ваш дизайн</p><div class="price">от 5 990 ₸</div><a class="buy" href="#contacts">Заказать</a></div>
+  </div>
+</section>
+
+<section class="section" id="how">
+<div class="how">
+  <div class="center"><h2>Как это работает?</h2><p class="sub">Три простых шага.</p></div>
+  <div class="steps">
+    <div class="step"><span>01</span><h3>Выберите дизайн</h3><p>Выбираете готовый вариант или присылаете свой логотип.</p></div>
+    <div class="step"><span>02</span><h3>Мы настраиваем NFC</h3><p>Записываем нужную ссылку и подготавливаем вашу карту.</p></div>
+    <div class="step"><span>03</span><h3>Tap & Share</h3><p>Клиент подносит смартфон и сразу получает нужную информацию.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="cta" id="contacts">
+  <h2>Готовы перейти на новый уровень?</h2>
+  <p>Напишите нам — поможем выбрать карту и дизайн.</p>
+  <a class="primary" href="https://wa.me/77000000000">Заказать в WhatsApp</a>
+</section>
+<footer>NFC. © 2026 • Almaty, Kazakhstan</footer>
+</body>
+</html>
